@@ -7,17 +7,22 @@
 
 int main(void)
 {
-	long int n, fp;
+	long prime = 612852475143, div;
 
-	n = 612852475143;
-	for (fp = 2; fp <= n; fp++)
+	while (div < (prime / 2))
 	{
-		if (n % fp == 0)
+		if (prime % 2 == 0)
 		{
-			n /= fp;
-			fp--;
+			prime /= 2;
+			continue;
+		}
+		for (div = 3; div < (prime / 2); div += 2)
+		{
+			if (prime % div == 0)
+				prime /= div;
 		}
 	}
-	printf("%1d\n", fp);
+	printf("%1d\n", prime);
 	return (0);
+
 }

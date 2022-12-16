@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * print diagonal - this draws a diagonal line 
+ * print_diagonal - this draws a diagonal line
  * @n: the mumber of \ character to be drawn
+ * Return: Always 0.
  */
 void print_diagonal(int n)
 {
 	int line, gap;
-	
+
 	if (n > 0)
 	{
 	for (line = 0; line < n; line++)

@@ -25,7 +25,7 @@ int _atoi(char *s)
 
 		while (i < len && f == 0)
 
-	{
+		{
 
 			if (s[i] == '-')
 			++d;
@@ -47,13 +47,11 @@ int _atoi(char *s)
 
 			i++;
 			}
-}
-if (f == 0)
+	if (f == 0)
+		return (0);
 
-	return (0);
-return (n);
+	return (n);
 }
-
 /**
  * main - multiplies two numbers
  * @argc: number of arguments

@@ -38,7 +38,6 @@ int main(int argc, char *argv[])
 {
 	int count;
 	int str_to_int;
-
 	int sum = 0;
 
 	count = 1;
@@ -50,6 +49,7 @@ int main(int argc, char *argv[])
 			sum += str_to_int;
 		}
 
+		else
 		{
 			printf("Error\n");
 			return (1);

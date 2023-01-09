@@ -19,7 +19,7 @@ int _atoi(char *s)
 	f = 0;
 	digit = 0;
 
-	while (s[len] != '\0'
+	while (s[len] != '\0')
 
 			len++;
 
@@ -32,8 +32,7 @@ int _atoi(char *s)
 
 
 			if (s[i] >= '0' && s[i] <= '9')
-
-			{		 
+			{
 			digit = s[i] - '0';
 			if (d % 2)
 			digit = -digit;

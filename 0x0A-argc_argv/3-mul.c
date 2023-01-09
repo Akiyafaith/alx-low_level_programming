@@ -19,7 +19,7 @@ int _atoi(char *s)
 	f = 0;
 	digit = 0;
 
-	while (s[len] != '\0')
+		while (s[len] != '\0')
 
 			len++;
 
@@ -44,13 +44,11 @@ int _atoi(char *s)
 				break;
 			f = 0;
 			}
-
 			i++;
 			}
 	if (f == 0)
 		return (0);
-
-	return (n);
+return (n);
 }
 /**
  * main - multiplies two numbers

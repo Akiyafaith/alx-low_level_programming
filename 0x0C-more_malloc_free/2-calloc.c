@@ -8,7 +8,7 @@
  * @n: number of times to copy b
  * Return: pointer to the memory area s
  */
-void *_calloc(unsigned int nmemb, unsigned int size)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 

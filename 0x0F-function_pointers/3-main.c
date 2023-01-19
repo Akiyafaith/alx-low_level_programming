@@ -10,8 +10,8 @@
  *
  *  Return:Always 0.
  */
-int main(int argc, char *argv[])
-//int main(int __attribute__((__unused__)) argc, char *argv[])
+//int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int num0, num1;
 	char *op;
@@ -32,7 +32,8 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*op == '/' && num1 == 0) || (*op == '%' && num1 == 0))
+	if ((*op == '/' && num1 == 0) ||
+		(*op == '%' && num1 == 0))
 	{
 		printf("Error\n");
 		exit(100);

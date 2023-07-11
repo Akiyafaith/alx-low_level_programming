@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "search_algos.h"
 /**
  * binary_search - searches for a value in a sorted array of integers
  * using the Binary search algorithm
@@ -11,22 +12,23 @@
 int binary_search(int *array, size_t size, int value)
 {
 	size_t l;
+	int left, right, mid;
 
 	if (array == NULL)
 		return (-1);
 
-	int left = 0;
-	int right = size - 1;
+	left = 0;
+	right = (int)size - 1;
 
 	while (left <= right)
 	{
-		int mid = left + (right - left) / 2;
+		mid = left + (right - left) / 2;
 
 		printf("Searching in array: ");
-		for (l = left; l <= right; l++)
+		for (l = left; l <= (size_t)right; l++)
 		{
 			printf("%d", array[l]);
-			if (l != right)
+			if (l != (size_t)right)
 				printf(", ");
 		}
 		printf("\n");
